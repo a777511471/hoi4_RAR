@@ -1,0 +1,20 @@
+﻿l_simp_chinese:
+ IAR_PRC_anti_foreign_sanctions_law_idea: "反国外制裁法"
+ IAR_PRC_anti_foreign_sanctions_law_idea_desc: "全国人大常委会通过《反国外制裁法》后，中国获得了一套更完整的对等反制工具。有关部门可以针对配合外国制裁的实体与个人采取限制措施，同时为关键产业、供应链与国内资本提供更强的政策保护。"
+
+ IAR_PRC_CONGRESS.1.a: "继续巩固建制派的主导地位"
+ IAR_PRC_CONGRESS.1.b: "给改革派更多的政治空间"
+ IAR_PRC_CONGRESS.1.c: "让强硬/民族派掌握更多话语权"
+ IAR_PRC_CONGRESS.1.d: "扩大泛左派在党内的影响"
+
+ IAR_PRC_missile_strike_category: "远程导弹打击"
+ IAR_PRC_missile_strike_category_desc: "完成导弹部署后，火箭军可以直接在地图上选择台湾、日本与澳大利亚相关地块实施远程打击。每次打击会随机摧毁民用工厂、军用工厂、船坞、港口、基础设施，或直接削减当地人力。"
+ IAR_PRC_missile_strike_state: "导弹打击：[FROM.GetName]"
+ IAR_PRC_missile_strike_state_desc: "对§Y[FROM.GetName]§!实施第一轮远程导弹打击。打击结果随机落在工业、军工、船坞、港口、基础设施或当地人力之一；地图上会同时播放爆炸打击动画。每个目标地块只能执行一次第一轮打击。"
+ IAR_PRC_missile_first_wave_unlocked_tt: "解锁§Y地块导弹打击§!：可在地图上逐个选择§Y台湾、日本、澳大利亚§!的目标地块实施第一轮导弹袭击。"
+ IAR_PRC_taiwan_full_barrage_tt: "对§Y台湾全境§!实施一轮导弹齐射：台湾各地块都会分别承受一次随机的工业、港口、基础设施或人力损失。"
+ IAR_PRC_CONGRESS_cen_tt: "§Y建制派影响力§!：§G+5%§!"
+ IAR_PRC_CONGRESS_lib_tt: "§Y改革派影响力§!：§G+5%§!"
+ IAR_PRC_CONGRESS_nat_tt: "§Y强硬/民族派影响力§!：§G+5%§!"
+ IAR_PRC_CONGRESS_new_tt: "§Y泛左派影响力§!：§G+5%§!"
+ IAR_PRC_missile_second_wave_barrage_tt: "对§Y台湾、日本、澳大利亚全部目标地块§!再次实施一轮大规模导弹轰炸；每个仍由对方控制的目标地块都会单独随机承受工业、军工、船坞、港口、基础设施或当地人力损失，并播放打击动画。"

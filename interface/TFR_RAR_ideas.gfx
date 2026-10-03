@@ -1,0 +1,46 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_idea_IAR_PRC_promising_modern_state"
+		texturefile = "gfx/interface/ideas/PRC/IAR_PRC_promising_modern_state.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_IAR_PRC_public_security_stable"
+		texturefile = "gfx/interface/ideas/PRC/IAR_PRC_public_security_stable.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_IAR_PRC_crackdown_organized_crime"
+		texturefile = "gfx/interface/ideas/PRC/IAR_PRC_crackdown_organized_crime.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_IAR_PRC_gutian_restart"
+		texturefile = "gfx/interface/ideas/PRC/IAR_PRC_gutian_restart.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_IAR_PRC_chinese_military"
+		texturefile = "gfx/interface/ideas/PRC/IAR_PRC_chinese_military.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_IAR_PRC_formalism"
+		texturefile = "gfx/interface/ideas/PRC/IAR_PRC_formalism.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_IAR_PRC_information_control"
+		texturefile = "gfx/interface/ideas/PRC/IAR_PRC_information_control.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_IAR_PRC_internet_disorder"
+		texturefile = "gfx/interface/ideas/PRC/IAR_PRC_internet_disorder.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_IAR_PRC_education_surplus"
+		texturefile = "gfx/interface/ideas/PRC/IAR_PRC_education_surplus.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_IAR_PRC_education_problems"
+		texturefile = "gfx/interface/ideas/PRC/IAR_PRC_education_problems.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_IAR_PRC_low_economic_quality"
+		texturefile = "gfx/interface/ideas/PRC/IAR_PRC_low_economic_quality.png"
+	}
+}

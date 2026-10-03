@@ -1,0 +1,74 @@
+spriteTypes = {
+    SpriteType = {
+        name = "GFX_Image_1783241986278_580"
+        texturefile = "gfx/interface/goals/PRC/Image_1783241986278_580.png"
+    }
+    SpriteType = {
+        name = "GFX_Image_1783241983361_349"
+        texturefile = "gfx/interface/goals/PRC/Image_1783241983361_349.png"
+    }
+    SpriteType = {
+        name = "GFX_Image_1783237952626_878"
+        texturefile = "gfx/interface/goals/PRC/Image_1783237952626_878.png"
+    }
+    SpriteType = {
+        name = "GFX_Image_1783237949994_570"
+        texturefile = "gfx/interface/goals/PRC/Image_1783237949994_570.png"
+    }
+    SpriteType = {
+        name = "GFX_Image_1783237947159_262"
+        texturefile = "gfx/interface/goals/PRC/Image_1783237947159_262.png"
+    }
+    SpriteType = {
+        name = "GFX_Image_1783160211864_836"
+        texturefile = "gfx/interface/goals/PRC/Image_1783160211864_836.png"
+    }
+    SpriteType = {
+        name = "GFX_Image_1781863584059_168"
+        texturefile = "gfx/interface/goals/PRC/Image_1781863584059_168.png"
+    }
+    SpriteType = {
+        name = "GFX_Image_1782110170004_321"
+        texturefile = "gfx/interface/goals/PRC/Image_1782110170004_321.png"
+    }
+    SpriteType = {
+        name = "GFX_Image_1782110165900_321"
+        texturefile = "gfx/interface/goals/PRC/Image_1782110165900_321.png"
+    }
+    SpriteType = {
+        name = "GFX_Image_1782221859594_498"
+        texturefile = "gfx/interface/goals/PRC/Image_1782221859594_498.png"
+    }
+    SpriteType = {
+        name = "GFX_Image_1783241991727_42"
+        texturefile = "gfx/interface/goals/PRC/Image_1783241991727_42.png"
+    }
+    SpriteType = {
+        name = "GFX_Image_1782110167582_859"
+        texturefile = "gfx/interface/goals/PRC/Image_1782110167582_859.png"
+    }
+    SpriteType = {
+        name = "GFX_Image_1782371695282_297"
+        texturefile = "gfx/interface/goals/PRC/Image_1782371695282_297.png"
+    }
+    SpriteType = {
+        name = "GFX_Image_1783241990035_119"
+        texturefile = "gfx/interface/goals/PRC/Image_1783241990035_119.png"
+    }
+    SpriteType = {
+        name = "GFX_Image_1783241988821_272"
+        texturefile = "gfx/interface/goals/PRC/Image_1783241988821_272.png"
+    }
+    SpriteType = {
+        name = "GFX_Image_1783241987374_965"
+        texturefile = "gfx/interface/goals/PRC/Image_1783241987374_965.png"
+    }
+    SpriteType = {
+        name = "GFX_PRC_drill_for_xinjiang_oil"
+        texturefile = "gfx/interface/goals/PRC/PRC_drill_for_xinjiang_oil.png"
+    }
+    SpriteType = {
+        name = "GFX_focus_PRC_unite_with_hardliners"
+        texturefile = "gfx/interface/goals/PRC/2E014EA47BD73F610EDC0FBA307D557E.png"
+    }
+}

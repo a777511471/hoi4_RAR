@@ -1,0 +1,13 @@
+﻿l_simp_chinese:
+ PRC_dev_tools_category: "开发工具"
+ PRC_dev_tools_category_desc: "革故鼎新开发期自用的调试决议，正式发布前请删除。"
+ PRC_dev_load_china_tree: "切回中国主树"
+ PRC_dev_load_china_tree_desc: "把国策树切回中国主树 china_focus。想看疫情线或石油线时先点这个。"
+ PRC_dev_load_taiwan_tree: "显示台海战争树"
+ PRC_dev_load_taiwan_tree_desc: "切换到台海战争树 PRC_taiwan_war_tree，并补齐这棵树需要的两个旗标。"
+ PRC_dev_unlock_covid_branch: "显示疫情线"
+ PRC_dev_unlock_covid_branch_desc: "先切回中国主树，再直接完成“调整航线”，解锁并显示疫情支线。注意：这会消耗掉那一个国策。"
+ PRC_dev_unlock_oil_branch: "显示石油危机线"
+ PRC_dev_unlock_oil_branch_desc: "设置石油危机旗标，把石油支线显示出来，不用等石油危机事件。"
+ PRC_dev_clear_oil_branch: "收起石油危机线"
+ PRC_dev_clear_oil_branch_desc: "清除石油危机旗标，把石油支线重新藏起来。"

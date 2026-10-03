@@ -1,0 +1,78 @@
+﻿l_simp_chinese:
+ #台海战争前提意识形态思想战争#决议#燃尽亚太制作组在这里祝你们的项目蒸蒸日上！#
+   # ---------- 两岸政治攻势 分类 ----------
+  PRC_cross_strait_political_offensive_category: "两岸政治攻势"
+  PRC_cross_strait_political_offensive_category_desc: "军事手段之外，政治攻势同样致命。通过劝降、促统宣言、最后通牒与武力威慑，持续瓦解台湾军民的抵抗意志。每一次施压都在撕裂他们的社会共识，让极权与共产的幽灵在他们自己的体制内生根发芽。"
+
+  # ---------- 决议 ----------
+  PRC_offer_surrender_terms: "劝降书"
+  PRC_offer_surrender_terms_desc: "向台湾当局发出劝降文书，许诺投降后的优待条件。此举将动摇其军心民心，削弱其统治合法性。"
+
+  PRC_promote_reunification_declaration: "促统宣言"
+  PRC_promote_reunification_declaration_desc: "发表庄严的促统宣言，向台湾民众展示统一后的美好前景。这种政治攻势将进一步撕裂台湾社会，推动其意识形态转向。"
+
+  PRC_issue_ultimatum: "最后通牒"
+  PRC_issue_ultimatum_desc: "向台湾当局发出最后通牒，要求其限期投降。这种高压态势将沉重打击其抵抗意志，迫使社会各阶层重新评估抵抗的代价。"
+
+  PRC_military_deterrence: "武力威慑"
+  PRC_military_deterrence_desc: "在台海周边展示军事力量，通过实战演习与威慑性部署，持续施压台湾军民的心理防线。"
+
+
+
+
+ #台海战争# 决议#燃尽亚太制作组在这里祝你们的项目蒸蒸日上！#
+
+ PRC_unleash_firepower: "倾泻火力"
+ PRC_unleash_firepower_desc: "将战区内的远程火力储备全部倾泻而出——从福建沿岸到冲绳群岛，再到关岛前沿，铺天盖地的导弹与炸弹将摧毁敌人的工业心脏与民心士气。台湾将首当其冲化为焦土，日本与澳大利亚的军事据点也将付出惨痛代价。这是真正的毁灭性打击，足以让整个西太平洋颤抖。"
+ PRC_rapid_victory_propaganda: "进行速胜论宣传"
+
+ PRC_mobilize_reserve_weapons: "动用储备武器"
+
+ PRC_carpet_bomb_taiwan: "无限制全面轰炸台湾"
+
+
+  # ---------- 国家能源战略 分类 ----------
+  PRC_energy_strategy_category: "国家能源战略"
+  PRC_energy_strategy_category_desc: "能源是工业的血液，是现代化的命脉。从大庆油田的重新喷涌，到东海、南海的蓝色宝藏，再到新能源与合成燃料的突破——中国正在打一场关乎未来的能源战争。我们必须彻底摆脱对进口的依赖，将能源安全的命脉牢牢握在自己手中。这不仅是经济的需要，更是大国崛起的底牌。"
+
+  PRC_restart_daqing_oil: "重启大庆石油"
+  PRC_restart_daqing_oil_desc: "大庆油田曾是共和国工业的骄傲。如今，在石油危机阴影下，重启大庆生产，既是对历史荣光的致敬，也是保障国家能源安全的战略抉择。"
+
+  PRC_develop_offshore_oil: "开展海上石油"
+  PRC_develop_offshore_oil_desc: "广阔的海洋蕴藏着丰富的资源。我们将加大海上油气勘探与开发力度，拓展能源供给新渠道，增强国家能源自主能力。"
+
+  PRC_prioritize_renewable_energy: "重视新能源"
+  PRC_prioritize_renewable_energy_desc: "传统的化石能源时代终将落幕。重视太阳能、风能等新能源发展，不仅是应对石油危机的现实选择，更是引领未来绿色转型的战略远见。"
+
+  PRC_synthetic_energy_program: "合成能源计划"
+  PRC_synthetic_energy_program_desc: "面对能源瓶颈，合成燃料技术为我们打开了新的大门。通过合成能源计划，中国将在能源领域实现关键突破，减少对外依赖，掌握未来发展的主动权。"
+
+  PRC_renewable_energy_boost: "新能源产出提升"
+  PRC_renewable_energy_boost_desc: "对太阳能、风能等可再生能源的大力投入，正在逐步改变中国的能源结构。"
+
+  PRC_synthetic_energy_efficiency: "合成能源效率"
+  PRC_synthetic_energy_efficiency_desc: "合成燃料技术的突破大幅提升了工业总产出，能源价格显著下降。"
+
+
+
+
+
+
+ PRC_housing_tension: "房地产紧张"
+ PRC_housing_tension_desc: "1。"
+
+ PRC_comprehensive_moderately_prosperous_society: "全面小康"
+ PRC_comprehensive_moderately_prosperous_society_desc: "1。"
+
+
+ #民族精神
+  CHI_ideological_reunification: "统一思想的归复"
+  CHI_ideological_shock: "思想的冲击"
+  CHI_ideological_shock_desc: "1。"
+
+  CHI_economic_blockade: "被彻底封锁的经济"
+  CHI_economic_blockade_desc: "海空封锁切断了台湾与外界的贸易通道，资源枯竭、工厂停摆、物价飞涨。这座岛正被活活扼死。"
+
+  CHI_impending_doom: "大难将临……"
+  CHI_impending_doom_desc: "所有人都能感受到风暴正在逼近。士兵们在工事里焦躁不安，平民在囤积物资，空气中弥漫着末日的味道。要么守住，要么灭亡。"
+

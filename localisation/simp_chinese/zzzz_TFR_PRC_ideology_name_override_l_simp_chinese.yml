@@ -1,0 +1,7 @@
+﻿l_simp_chinese:
+ # 中国开局意识形态名称覆盖。TFR 中国开局领导人使用 xi_jinping_thought 时会直接显示下列名称。
+ xi_jinping_thought: "中国特色社会主义"
+ # 兼容旧补丁/其他版本可能使用的专用键。
+ IAR_PRC_opening_ideology_name: "中国特色社会主义"
+ PRC_socialism_with_chinese_characteristics: "中国特色社会主义"
+ socialism_with_chinese_characteristics: "中国特色社会主义"
