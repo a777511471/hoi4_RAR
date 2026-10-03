@@ -1,0 +1,8 @@
+﻿capital = 526
+set_politics = {
+    ruling_party = communist
+    elections_allowed = no
+}
+set_popularities = {
+    communist = 100
+}
