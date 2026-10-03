@@ -1,0 +1,15 @@
+add_namespace = iar_prc_pandemic_opening
+
+country_event = {
+	id = iar_prc_pandemic_opening.1
+	title = iar_prc_pandemic_opening.1.t
+	desc = iar_prc_pandemic_opening.1.d
+	is_triggered_only = yes
+
+	option = {
+		name = iar_prc_pandemic_opening.1.a
+		set_country_flag = PRC_yiqing
+		set_country_flag = PRC_covid_branch_revealed
+		mark_focus_tree_layout_dirty = yes
+	}
+}

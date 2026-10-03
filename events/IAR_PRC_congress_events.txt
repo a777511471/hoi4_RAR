@@ -1,0 +1,48 @@
+﻿add_namespace = IAR_PRC_CONGRESS
+
+country_event = {
+	id = IAR_PRC_CONGRESS.1
+	title = china.15.t
+	desc = china.15.d
+	picture = GFX_event_politburo
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = { tag = PRC }
+
+	option = {
+		name = IAR_PRC_CONGRESS.1.a
+		custom_effect_tooltip = IAR_PRC_CONGRESS_cen_tt
+		ai_chance = { base = 25 }
+		set_temp_variable = { var = PRC_influence_cen_var_temp value = 0.05 }
+		PRC_add_influence_cen = yes
+		hidden_effect = { load_focus_tree = PRC_taiwan_war_tree }
+		set_global_flag = PRC_xx_congress_end
+	}
+	option = {
+		name = IAR_PRC_CONGRESS.1.b
+		custom_effect_tooltip = IAR_PRC_CONGRESS_lib_tt
+		ai_chance = { base = 25 }
+		set_temp_variable = { var = PRC_influence_lib_var_temp value = 0.05 }
+		PRC_add_influence_lib = yes
+		hidden_effect = { load_focus_tree = PRC_taiwan_war_tree }
+		set_global_flag = PRC_xx_congress_end
+	}
+	option = {
+		name = IAR_PRC_CONGRESS.1.c
+		custom_effect_tooltip = IAR_PRC_CONGRESS_nat_tt
+		ai_chance = { base = 25 }
+		set_temp_variable = { var = PRC_influence_nat_var_temp value = 0.05 }
+		PRC_add_influence_nat = yes
+		hidden_effect = { load_focus_tree = PRC_taiwan_war_tree }
+		set_global_flag = PRC_xx_congress_end
+	}
+	option = {
+		name = IAR_PRC_CONGRESS.1.d
+		custom_effect_tooltip = IAR_PRC_CONGRESS_new_tt
+		ai_chance = { base = 25 }
+		set_temp_variable = { var = PRC_influence_new_var_temp value = 0.05 }
+		PRC_add_influence_new = yes
+		hidden_effect = { load_focus_tree = PRC_taiwan_war_tree }
+		set_global_flag = PRC_xx_congress_end
+	}
+}

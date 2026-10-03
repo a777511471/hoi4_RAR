@@ -1,0 +1,16 @@
+add_namespace = iar_prc_structure
+
+country_event = {
+	id = iar_prc_structure.1
+	title = iar_prc_structure.1.t
+	desc = iar_prc_structure.1.d
+	is_triggered_only = yes
+
+	option = {
+		name = iar_prc_structure.1.a
+		set_country_flag = PRC_yiqing
+		set_country_flag = PRC_covid_branch_revealed
+		add_stability = -0.01
+		mark_focus_tree_layout_dirty = yes
+	}
+}
