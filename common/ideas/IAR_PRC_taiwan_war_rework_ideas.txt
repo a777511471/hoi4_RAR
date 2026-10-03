@@ -1,0 +1,135 @@
+﻿ideas = {
+    country = {
+        IAR_PRC_last_chance_attack = {
+            picture = generic_military_1
+            allowed = { original_tag = PRC }
+            allowed_civil_war = yes
+            modifier = { army_attack_factor = 0.30 }
+            cost = 0
+            removal_cost = 0
+        }
+        IAR_PRC_taiwan_full_mobilization = {
+            picture = generic_military_1
+            allowed = { original_tag = PRC }
+            allowed_civil_war = yes
+            modifier = {
+                army_attack_factor = 0.50
+                air_attack_factor = 0.50
+                navy_capital_ship_attack_factor = 0.50
+                navy_screen_attack_factor = 0.50
+                navy_submarine_attack_factor = 0.50
+                naval_carrier_air_attack_factor = 0.50
+            }
+            cost = 0
+            removal_cost = 0
+        }
+        IAR_PRC_1992_consensus_attack = {
+            picture = generic_military_1
+            allowed = { original_tag = PRC }
+            allowed_civil_war = yes
+            modifier = { army_attack_factor = 0.25 }
+            cost = 0
+            removal_cost = 0
+        }
+        IAR_PRC_fast_finalization_attack = {
+            picture = generic_military_1
+            allowed = { original_tag = PRC }
+            allowed_civil_war = yes
+            modifier = {
+                army_attack_factor = 0.30
+                air_attack_factor = 0.30
+                navy_capital_ship_attack_factor = 0.30
+                navy_screen_attack_factor = 0.30
+                navy_submarine_attack_factor = 0.30
+                naval_carrier_air_attack_factor = 0.30
+            }
+            cost = 0
+            removal_cost = 0
+        }
+        IAR_PRC_steady_advance_attack = {
+            picture = generic_military_1
+            allowed = { original_tag = PRC }
+            allowed_civil_war = yes
+            modifier = { army_attack_factor = 0.50 }
+            cost = 0
+            removal_cost = 0
+        }
+        IAR_PRC_minimize_civilian_resistance = {
+            picture = generic_neutral_policy
+            allowed = { original_tag = PRC }
+            allowed_civil_war = yes
+            modifier = { resistance_target = -0.20 }
+            cost = 0
+            removal_cost = 0
+        }
+        IAR_PRC_unite_taiwan_people = {
+            picture = generic_neutral_policy
+            allowed = { original_tag = PRC }
+            allowed_civil_war = yes
+            modifier = { resistance_target = -0.50 }
+            cost = 0
+            removal_cost = 0
+        }
+        IAR_PRC_war_industry_priority = {
+            picture = generic_industry
+            allowed = { original_tag = PRC }
+            allowed_civil_war = yes
+            modifier = { industrial_capacity_factory = 0.50 }
+            cost = 0
+            removal_cost = 0
+        }
+        IAR_PRC_taipei_battle_attack = {
+            picture = generic_military_1
+            allowed = { original_tag = PRC }
+            allowed_civil_war = yes
+            modifier = { army_attack_factor = 0.50 }
+            cost = 0
+            removal_cost = 0
+        }
+        IAR_PRC_strait_fighting_attack = {
+            picture = generic_military_1
+            allowed = { original_tag = PRC }
+            allowed_civil_war = yes
+            modifier = {
+                army_attack_factor = 0.50
+                air_attack_factor = 0.50
+                navy_capital_ship_attack_factor = 0.50
+                navy_screen_attack_factor = 0.50
+                navy_submarine_attack_factor = 0.50
+                naval_carrier_air_attack_factor = 0.50
+            }
+            cost = 0
+            removal_cost = 0
+        }
+        IAR_PRC_modern_warfare_mastery = {
+            picture = generic_military_1
+            allowed = { original_tag = PRC }
+            allowed_civil_war = yes
+            modifier = { army_attack_factor = 0.50 }
+            cost = 0
+            removal_cost = 0
+        }
+        IAR_CHI_economic_warfare = {
+            picture = generic_economic_policy
+            allowed = { original_tag = CHI }
+            allowed_civil_war = yes
+            modifier = {
+                consumer_goods_factor = 0.40
+                industrial_capacity_factory = -0.30
+                industrial_capacity_dockyard = -0.30
+                production_speed_buildings_factor = -0.20
+                stability_factor = -0.15
+            }
+            cost = 0
+            removal_cost = 0
+        }
+        IAR_JAP_chinese_blockade = {
+            picture = generic_embargo
+            allowed = { original_tag = JAP }
+            allowed_civil_war = yes
+            modifier = { war_support_factor = -0.40 }
+            cost = 0
+            removal_cost = 0
+        }
+    }
+}

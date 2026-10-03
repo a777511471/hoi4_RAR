@@ -1,0 +1,171 @@
+ideas = {
+    country = {
+
+
+
+        # ---------- 房地产紧张（限时精神） ----------
+        PRC_housing_tension = {
+            name = PRC_housing_tension
+            picture = generic_civil_unrest
+            traits = { ZZZ_blank_idea_trait }
+            allowed = { original_tag = PRC }
+            allowed_civil_war = yes
+            modifier = {
+                stability_factor = -0.05
+                consumer_goods_factor = 0.05
+                political_power_gain = -0.10
+            }
+            cost = 0
+            removal_cost = 0
+            rule = { }
+            ai_will_do = { factor = 1 }
+        }
+
+        # ---------- 全面小康（永久精神） ----------
+        PRC_comprehensive_moderately_prosperous_society = {
+            name = PRC_comprehensive_moderately_prosperous_society
+            picture = PRC_prosperity_for_all_idea
+            traits = { ZZZ_blank_idea_trait }
+            allowed = { original_tag = PRC }
+            allowed_civil_war = yes
+            modifier = {
+                stability_factor = 0.10
+                war_support_factor = 0.05
+                consumer_goods_factor = -0.05
+                research_speed_factor = 0.05
+                recruitable_population_factor = 0.02
+                political_power_gain = 0.10
+            }
+            cost = 0
+            removal_cost = 0
+            rule = { }
+            ai_will_do = { factor = 1 }
+        }
+
+        # ---------- 统一思想的归复（CHI意识形态整肃） ----------
+        CHI_ideological_reunification = {
+        picture = generic_military_1
+        traits = { ZZZ_blank_idea_trait }
+        allowed = {
+            original_tag = CHI
+        }
+        allowed_civil_war = yes
+        modifier = {
+            army_attack_factor = -0.10          # 陆军师攻击 -10%
+            army_defence_factor = -0.10         # 陆军师防御 -10%
+            war_support_factor = -0.35          # 战争支持度 -35%
+            surrender_limit = -0.35             # 投降倾向 -35%
+        }
+        cost = 0
+        removal_cost = 0
+        }
+
+
+        # ---------- 思想的冲击 ----------
+        CHI_ideological_shock = {
+            name = CHI_ideological_shock
+            picture = JAP_inflaming_radicalism
+            traits = { ZZZ_blank_idea_trait }
+            allowed = { original_tag = CHI }
+            allowed_civil_war = yes
+            modifier = {
+                drift_defence_factor = -1.00
+                social_democrat_drift = 0.08
+                communist_drift = 0.08
+                totalitarian_socialist_drift = 0.08
+                libertarian_socialist_drift = 0.08
+                conservative_drift = -0.05
+                social_liberal_drift = -0.05
+                surrender_limit = -0.10
+            }
+            cost = 0
+            removal_cost = 0
+            rule = { }
+            ai_will_do = { factor = 1 }
+        }
+
+        # ---------- 被彻底封锁的经济 ----------
+        CHI_economic_blockade = {
+            name = CHI_economic_blockade
+            picture = JAP_failed
+            traits = { ZZZ_blank_idea_trait }
+            allowed = { original_tag = CHI }
+            allowed_civil_war = yes
+            modifier = {
+                consumer_goods_factor = 0.35
+                industrial_capacity_factory = -0.15
+                min_export = -0.45
+                stability_factor = -0.08
+                war_support_factor = -0.08
+            }
+            cost = 0
+            removal_cost = 0
+            rule = { }
+            ai_will_do = { factor = 1 }
+        }
+
+        # ---------- 大难将临…… ----------
+        CHI_impending_doom = {
+            name = CHI_impending_doom
+            picture = JAP_Taiwan_Intervention
+            traits = { ZZZ_blank_idea_trait }
+            allowed = { original_tag = CHI }
+            allowed_civil_war = yes
+            modifier = {
+                dig_in_speed_factor = -0.20
+                max_dig_in_factor = 0.15
+                army_core_defence_factor = 0.05
+                army_core_attack_factor = 0.05
+            }
+            cost = 0
+            removal_cost = 0
+            rule = { }
+            ai_will_do = { factor = 1 }
+        }
+
+        
+        # ---------- 新能源产出提升 ----------
+        PRC_renewable_energy_boost = {
+            name = PRC_renewable_energy_boost
+            picture = JAP_green_energy
+            traits = { ZZZ_blank_idea_trait }
+            allowed = { original_tag = PRC }
+            allowed_civil_war = yes
+            modifier = {
+                production_speed_energy_farm_factor = 0.18
+            }
+            cost = 0
+            removal_cost = 0
+            rule = { }
+            ai_will_do = { factor = 1 }
+        }
+
+        # ---------- 合成能源效率 ----------
+        PRC_synthetic_energy_efficiency = {
+            name = PRC_synthetic_energy_efficiency
+            picture = GFX_decision_generic_industry
+            traits = { ZZZ_blank_idea_trait }
+            allowed = { original_tag = PRC }
+            allowed_civil_war = yes
+            modifier = {
+                industrial_capacity_factory = 0.10
+            }
+            cost = 0
+            removal_cost = 0
+            rule = { }
+            ai_will_do = { factor = 1 }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}

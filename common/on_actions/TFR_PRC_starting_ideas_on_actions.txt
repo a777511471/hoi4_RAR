@@ -1,0 +1,38 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            PRC = {
+                if = {
+                    limit = {
+                        NOT = { has_country_flag = IAR_PRC_starting_spirits_reset }
+                    }
+
+                    remove_ideas = {
+                        PRC_made_in_china_idea
+                        PRC_chinese_enviroment_idea
+                        PRC_pla_idea
+                        PRC_corrupt_bureaucracy_idea
+                        PRC_chinese_communist_party_idea
+                        PRC_the_separatist_problem
+                    }
+
+                    add_ideas = {
+                        IAR_PRC_promising_modern_state
+                        IAR_PRC_public_security_stable
+                        IAR_PRC_crackdown_organized_crime
+                        IAR_PRC_gutian_restart
+                        IAR_PRC_chinese_military
+                        IAR_PRC_formalism
+                        IAR_PRC_information_control
+                        IAR_PRC_internet_disorder
+                        IAR_PRC_education_surplus
+                        IAR_PRC_education_problems
+                        IAR_PRC_low_economic_quality
+                    }
+
+                    set_country_flag = IAR_PRC_starting_spirits_reset
+                }
+            }
+        }
+    }
+}

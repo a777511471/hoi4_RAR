@@ -1,0 +1,100 @@
+﻿IAR_PRC_missile_strike_category = {
+    icon = GFX_decision_generic_air_force
+    visible = {
+        original_tag = PRC
+        has_country_flag = IAR_PRC_missile_strikes_unlocked
+    }
+
+    IAR_PRC_missile_strike_taiwan = {
+        icon = GFX_decision_generic_air_force
+        cost = 1
+        days_remove = 3
+        fire_only_once = no
+        visible = { CHI = { exists = yes } }
+        available = { CHI = { exists = yes } }
+        remove_effect = {
+            CHI = {
+                every_owned_state = {
+                    damage_building = { type = industrial_complex damage = 0.30 }
+                    damage_building = { type = arms_factory damage = 0.30 }
+                    damage_building = { type = dockyard damage = 0.30 }
+                    damage_units = {
+                        state = THIS
+                        damage = 0.50
+                        org_damage = 0.50
+                        str_damage = 0.50
+                        ratio = yes
+                        army = yes
+                        navy = no
+                    }
+                }
+                set_temp_variable = { var = IAR_missile_manpower_loss value = manpower_k }
+                multiply_temp_variable = { var = IAR_missile_manpower_loss value = -300 }
+                add_manpower = var:IAR_missile_manpower_loss
+            }
+        }
+        ai_will_do = { factor = 1 }
+    }
+
+    IAR_PRC_missile_strike_japan = {
+        icon = GFX_decision_generic_air_force
+        cost = 1
+        days_remove = 3
+        fire_only_once = no
+        visible = { JAP = { exists = yes } }
+        available = { JAP = { exists = yes } }
+        remove_effect = {
+            JAP = {
+                every_owned_state = {
+                    damage_building = { type = industrial_complex damage = 0.30 }
+                    damage_building = { type = arms_factory damage = 0.30 }
+                    damage_building = { type = dockyard damage = 0.30 }
+                    damage_units = {
+                        state = THIS
+                        damage = 0.50
+                        org_damage = 0.50
+                        str_damage = 0.50
+                        ratio = yes
+                        army = yes
+                        navy = no
+                    }
+                }
+                set_temp_variable = { var = IAR_missile_manpower_loss value = manpower_k }
+                multiply_temp_variable = { var = IAR_missile_manpower_loss value = -300 }
+                add_manpower = var:IAR_missile_manpower_loss
+            }
+        }
+        ai_will_do = { factor = 1 }
+    }
+
+    IAR_PRC_missile_strike_australia = {
+        icon = GFX_decision_generic_air_force
+        cost = 1
+        days_remove = 3
+        fire_only_once = no
+        visible = { AST = { exists = yes } }
+        available = { AST = { exists = yes } }
+        remove_effect = {
+            AST = {
+                every_owned_state = {
+                    damage_building = { type = industrial_complex damage = 0.30 }
+                    damage_building = { type = arms_factory damage = 0.30 }
+                    damage_building = { type = dockyard damage = 0.30 }
+                    damage_units = {
+                        state = THIS
+                        damage = 0.50
+                        org_damage = 0.50
+                        str_damage = 0.50
+                        ratio = yes
+                        army = yes
+                        navy = no
+                    }
+                }
+                set_temp_variable = { var = IAR_missile_manpower_loss value = manpower_k }
+                multiply_temp_variable = { var = IAR_missile_manpower_loss value = -300 }
+                add_manpower = var:IAR_missile_manpower_loss
+            }
+        }
+        ai_will_do = { factor = 1 }
+    }
+}

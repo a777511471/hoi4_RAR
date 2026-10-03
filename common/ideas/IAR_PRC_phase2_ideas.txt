@@ -1,0 +1,19 @@
+﻿ideas = {
+	country = {
+		IAR_PRC_anti_foreign_sanctions_law_idea = {
+			picture = generic_embargo
+			allowed = { original_tag = PRC }
+			allowed_civil_war = yes
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.03
+				war_support_factor = 0.05
+				industrial_capacity_factory = 0.03
+				production_speed_buildings_factor = 0.03
+				trade_opinion_factor = -0.10
+			}
+			cost = 0
+			removal_cost = 0
+		}
+	}
+}

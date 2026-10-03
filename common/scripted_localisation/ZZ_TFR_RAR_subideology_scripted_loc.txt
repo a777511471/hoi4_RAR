@@ -1,0 +1,317 @@
+defined_text = {
+	name = GetSubIdeologyLocAuthSoc
+	text = {
+		trigger = {
+			OR = {
+				tag = TMS
+				tag = KAZ
+				tag = AZR
+				tag = TAJ
+			}
+			has_country_leader_ideology = market_socialism
+		}
+		localization_key = SOV_oligarchic_socialism
+	}
+	text = {
+		trigger = {
+			tag = SOV
+			has_country_leader_ideology = market_socialism
+		}
+		localization_key = SOV_soviet_market_communism		
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_leader = {
+					character = PRC_xi_jinping
+					ruling_only = yes
+				}
+				has_country_leader = {
+					character = PRC_wang_yang
+					ruling_only = yes
+				}
+			}
+			has_country_leader_ideology = market_socialism
+		}
+		localization_key = PRC_deng_xiaoping_thought
+	}	
+	text = {
+		trigger = {
+			#OR = {
+			#	has_country_leader = {
+			#		character = MND_peng_daxun
+			#		ruling_only = yes
+			#	}
+			#	has_country_leader = {
+			#		character = PRC_xi_jinping
+			#		ruling_only = yes
+			#	}
+			#}
+			has_country_leader_ideology = xi_jinping_thought
+		}
+		localization_key = xi_jinping_thought
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = li_zuocheng_thought
+		}
+		localization_key = li_zuocheng_thought
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = red_derzhavism
+		}
+		localization_key = red_derzhavism
+	}
+	text = {
+		trigger = {
+			OR = {
+				original_tag = EST
+			}
+			has_country_leader_ideology = marxism_leninism
+		}
+		localization_key = EST_communism
+	}	
+	text = {
+		trigger = {
+			OR = {
+				original_tag = VIN
+			}
+			has_country_leader_ideology = marxism_leninism
+		}
+		localization_key = VIN_ho_chi_minh_thought
+	}	
+	text = {
+		trigger = {
+			OR = {
+				tag = ALB
+			}
+			has_country_leader_ideology = left_nationalism
+		}
+		localization_key = UK2_multipolar_communism
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_leader = {
+					character = PRK_kim_jongun
+					ruling_only = yes
+				}	
+			}
+			has_country_leader_ideology = market_socialism
+		}
+		localization_key = PRK_neo_juche
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_leader = {
+					character = VEN_nicolas_maduro_char
+					ruling_only = yes
+				}	
+			}
+			has_country_leader_ideology = left_nationalism
+		}
+		localization_key = bolivarianism
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_leader = {
+					character = PRK_kim_jongun
+					ruling_only = yes
+				}	
+			}
+			has_country_leader_ideology = left_nationalism
+		}
+		localization_key = PRK_reformist_juche
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_leader = {
+					character = NIR_Micheal_o_Conghaile
+					ruling_only = yes
+				}
+				tag = IRE
+			}
+			has_country_leader_ideology = left_nationalism
+		}
+		localization_key = IRA_irish_republicanism
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_leader = {
+					character = HRL_saif_islam_gaddafi_char
+					ruling_only = yes
+				}	
+			}
+			has_country_leader_ideology = left_nationalism
+		}
+		localization_key = gaddafism
+	}	
+	text = {
+		trigger = {
+			OR = {
+				tag = PRC
+			}
+			has_country_leader_ideology = neo_socialism
+		}
+		localization_key = PRC_chinese_neocommunism
+	}
+	text = {
+		trigger = {
+			original_tag = SOV
+			has_country_leader_ideology = marxism_leninism
+			NOT = {
+				OR = {
+					has_completed_focus = SOV_course_continuation
+					has_completed_focus = SOV_back_to_revolutionary_roots
+				}
+			}
+		}
+		localization_key = SOV_soviet_communism		
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = marxism_leninism
+			OR = {
+				has_country_leader = {
+					character = SAF_Blade_Nzimande_communist_char
+					ruling_only = yes
+				}	
+				has_country_leader = {
+					character = MZB_felipe_nyusi_char
+					ruling_only = yes
+				}
+				has_country_leader = {
+					character = ZIM_emmerson_mnangagwa_char
+					ruling_only = yes
+				}	
+				has_country_leader = {
+					character = ERI_isayas_afewerki_char
+					ruling_only = yes
+				}
+				has_country_leader = {
+					character = ANG_joao_lourenco_char
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = afromarxism	
+	}
+	text = {
+		trigger = {
+			original_tag = SOV
+			has_country_leader_ideology = left_nationalism
+		}
+		localization_key = SOV_soviet_nationalism
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_leader = {
+					character = PRC_Hu_Chunhua
+					ruling_only = yes
+				}	
+			}
+			has_country_leader_ideology = marxism_leninism
+		}
+		localization_key = PRC_mao_zedong_thought
+	}	
+	text = {
+		trigger = {
+			OR = {
+				tag = UK2
+			}
+			has_country_leader_ideology = marxism_leninism
+		}
+		localization_key = UK2_multipolar_communism
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_leader = {
+					character = APA_gloria_la_riva_char
+					ruling_only = yes
+				}			
+				has_country_leader = {
+					character = APA_michael_prysner_char
+					ruling_only = yes
+				}	
+			}
+			has_country_leader_ideology = marxism_leninism
+		}
+		localization_key = APA_revolutionary_socialism
+	}
+	text = {
+		trigger = {
+			tag = TUR
+			has_country_leader_ideology = left_nationalism
+		}
+		localization_key = TUR_kemalism_authsoc
+	}
+
+	text = {
+		trigger = {
+			tag = PRC
+			has_country_leader_ideology = market_socialism_PRC
+		}
+		localization_key = market_socialism_PRC
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = marxism_leninism
+		}
+		localization_key = marxism_leninism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = neo_socialism
+		}
+		localization_key = neo_socialism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = populist_sovietism
+		}
+		localization_key = populist_sovietism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = left_nationalism
+		}
+		localization_key = left_nationalism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = trotskyism
+		}
+		localization_key = trotskyism
+	}	
+	text = {
+		trigger = {
+			has_country_leader_ideology = anti_revisionist_communism
+		}
+		localization_key = anti_revisionist_communism
+	}	
+	text = {
+		trigger = {
+			has_country_leader_ideology = orthodox_leninism
+		}
+		localization_key = orthodox_leninism
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = left_baathism
+		}
+		localization_key = left_baathism
+	}	
+	text = {
+		trigger = {
+			has_country_leader_ideology = putinism_neosoviet
+		}
+		localization_key = putinism_neosoviet
+	}
+}

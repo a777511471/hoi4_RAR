@@ -1,0 +1,148 @@
+ideas = {
+    country = {
+
+        IAR_PRC_promising_modern_state = {
+            name = IAR_PRC_promising_modern_state
+            picture = IAR_PRC_promising_modern_state
+            traits = { ZZZ_blank_idea_trait }
+            allowed = { original_tag = PRC }
+            allowed_civil_war = yes
+            modifier = { }
+            cost = 0
+            removal_cost = 0
+            rule = { }
+            ai_will_do = { factor = 1 }
+        }
+
+        IAR_PRC_public_security_stable = {
+            name = IAR_PRC_public_security_stable
+            picture = IAR_PRC_public_security_stable
+            traits = { ZZZ_blank_idea_trait }
+            allowed = { original_tag = PRC }
+            allowed_civil_war = yes
+            modifier = { }
+            cost = 0
+            removal_cost = 0
+            rule = { }
+            ai_will_do = { factor = 1 }
+        }
+
+        IAR_PRC_crackdown_organized_crime = {
+            name = IAR_PRC_crackdown_organized_crime
+            picture = IAR_PRC_crackdown_organized_crime
+            traits = { ZZZ_blank_idea_trait }
+            allowed = { original_tag = PRC }
+            allowed_civil_war = yes
+            modifier = { }
+            cost = 0
+            removal_cost = 0
+            rule = { }
+            ai_will_do = { factor = 1 }
+        }
+
+        IAR_PRC_gutian_restart = {
+            name = IAR_PRC_gutian_restart
+            picture = IAR_PRC_gutian_restart
+            traits = { ZZZ_blank_idea_trait }
+            allowed = { original_tag = PRC }
+            allowed_civil_war = yes
+            modifier = { }
+            cost = 0
+            removal_cost = 0
+            rule = { }
+            ai_will_do = { factor = 1 }
+        }
+
+        IAR_PRC_chinese_military = {
+            name = IAR_PRC_chinese_military
+            picture = IAR_PRC_chinese_military
+            traits = { ZZZ_blank_idea_trait }
+            allowed = { original_tag = PRC }
+            allowed_civil_war = yes
+            modifier = { }
+            cost = 0
+            removal_cost = 0
+            rule = { }
+            ai_will_do = { factor = 1 }
+        }
+
+        IAR_PRC_formalism = {
+            name = IAR_PRC_formalism
+            picture = IAR_PRC_formalism
+            traits = { ZZZ_blank_idea_trait }
+            allowed = { original_tag = PRC }
+            allowed_civil_war = yes
+            modifier = { }
+            cost = 0
+            removal_cost = 0
+            rule = { }
+            ai_will_do = { factor = 1 }
+        }
+
+        IAR_PRC_information_control = {
+            name = IAR_PRC_information_control
+            picture = IAR_PRC_information_control
+            traits = { ZZZ_blank_idea_trait }
+            allowed = { original_tag = PRC }
+            allowed_civil_war = yes
+            modifier = { }
+            cost = 0
+            removal_cost = 0
+            rule = { }
+            ai_will_do = { factor = 1 }
+        }
+
+        IAR_PRC_internet_disorder = {
+            name = IAR_PRC_internet_disorder
+            picture = IAR_PRC_internet_disorder
+            traits = { ZZZ_blank_idea_trait }
+            allowed = { original_tag = PRC }
+            allowed_civil_war = yes
+            modifier = { }
+            cost = 0
+            removal_cost = 0
+            rule = { }
+            ai_will_do = { factor = 1 }
+        }
+
+        IAR_PRC_education_surplus = {
+            name = IAR_PRC_education_surplus
+            picture = IAR_PRC_education_surplus
+            traits = { ZZZ_blank_idea_trait }
+            allowed = { original_tag = PRC }
+            allowed_civil_war = yes
+            modifier = { }
+            cost = 0
+            removal_cost = 0
+            rule = { }
+            ai_will_do = { factor = 1 }
+        }
+
+        IAR_PRC_education_problems = {
+            name = IAR_PRC_education_problems
+            picture = IAR_PRC_education_problems
+            traits = { ZZZ_blank_idea_trait }
+            allowed = { original_tag = PRC }
+            allowed_civil_war = yes
+            modifier = { }
+            cost = 0
+            removal_cost = 0
+            rule = { }
+            ai_will_do = { factor = 1 }
+        }
+
+        IAR_PRC_low_economic_quality = {
+            name = IAR_PRC_low_economic_quality
+            picture = IAR_PRC_low_economic_quality
+            traits = { ZZZ_blank_idea_trait }
+            allowed = { original_tag = PRC }
+            allowed_civil_war = yes
+            modifier = { }
+            cost = 0
+            removal_cost = 0
+            rule = { }
+            ai_will_do = { factor = 1 }
+        }
+
+    }
+}

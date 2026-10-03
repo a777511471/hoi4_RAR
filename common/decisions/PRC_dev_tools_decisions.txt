@@ -1,0 +1,92 @@
+# 革故鼎新：开发调试用决议
+# 作用：开发期随时把三块中国内容调出来看——疫情线、石油线、台海战争树。
+# 正式发布前连同本文件、分类文件和同名本地化文件一起删除即可。
+
+PRC_dev_tools_category = {
+
+	# ---------- 国策树切换 ----------
+	# 一个国家同一时间只会显示一棵国策树，所以要先能切回来。
+	PRC_dev_load_china_tree = {
+		icon = generic_industry
+		allowed = { tag = PRC }
+		visible = { is_ai = no }
+		available = { is_ai = no }
+		fire_only_once = no
+		cost = 0
+		complete_effect = {
+			load_focus_tree = china_focus
+			mark_focus_tree_layout_dirty = yes
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	# 台海树要求 PRC_ongoing_taiwan_war 与 PRC_analyze_first_days_unlocked_flag，
+	# 这里照抄原版烈焰升腾自己那条调试决议的写法，缺一个都会有一大片国策不可用。
+	PRC_dev_load_taiwan_tree = {
+		icon = generic_crossed_guns
+		allowed = { tag = PRC }
+		visible = { is_ai = no }
+		available = { is_ai = no }
+		fire_only_once = no
+		cost = 0
+		complete_effect = {
+			load_focus_tree = PRC_taiwan_war_tree
+			set_global_flag = PRC_ongoing_taiwan_war
+			set_country_flag = PRC_analyze_first_days_unlocked_flag
+			mark_focus_tree_layout_dirty = yes
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	# ---------- 疫情线 ----------
+	# 疫情支线由 PRC_yiqing 旗标控制；“调整航线”完成后会触发疫情事件，由事件揭示整条支线。
+	# 这条决议先切回中国主树并完成“调整航线”；随后会正常触发疫情事件。
+	PRC_dev_unlock_covid_branch = {
+		icon = generic_coronavirus
+		allowed = { tag = PRC }
+		visible = { is_ai = no }
+		available = { is_ai = no }
+		fire_only_once = no
+		cost = 0
+		complete_effect = {
+			load_focus_tree = china_focus
+			complete_national_focus = new_focus_11
+			# Dev shortcut: reveal immediately instead of waiting for the scheduled event.
+			set_country_flag = PRC_yiqing
+			mark_focus_tree_layout_dirty = yes
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	# ---------- 石油线 ----------
+	# 石油支线看的是 PRC_oil_crisis_ongoing 这个旗标，原版由事件 china.4 设置。
+	# 这里直接手动开关，不用等石油危机事件。
+	PRC_dev_unlock_oil_branch = {
+		icon = generic_oil
+		allowed = { tag = PRC }
+		visible = { is_ai = no }
+		available = { is_ai = no }
+		fire_only_once = no
+		cost = 0
+		complete_effect = {
+			load_focus_tree = china_focus
+			set_country_flag = PRC_oil_crisis_ongoing
+			mark_focus_tree_layout_dirty = yes
+		}
+		ai_will_do = { base = 0 }
+	}
+
+	PRC_dev_clear_oil_branch = {
+		icon = generic_oil
+		allowed = { tag = PRC }
+		visible = { is_ai = no }
+		available = { is_ai = no }
+		fire_only_once = no
+		cost = 0
+		complete_effect = {
+			clr_country_flag = PRC_oil_crisis_ongoing
+			mark_focus_tree_layout_dirty = yes
+		}
+		ai_will_do = { base = 0 }
+	}
+}

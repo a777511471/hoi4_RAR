@@ -1,0 +1,25 @@
+# ==================== 国家能源战略 ====================
+PRC_energy_strategy_category = {
+    icon = GFX_decision_generic_energy
+    visible = {
+        tag = PRC
+		has_country_flag = CN_OIL_KAICAI
+    }
+    available = {
+        tag = PRC
+		has_country_flag = CN_OIL_KAICAI
+    }
+}	
+
+PRC_cross_strait_political_offensive_category = {
+    icon = generic_decisions_improve_worker_conditions
+    visible = {
+        tag = PRC
+		has_country_flag = new_tw_focus_2
+        has_completed_focus = new_tw_focus_2
+    }
+    available = {
+        tag = PRC
+        has_completed_focus = new_tw_focus_2
+    }
+}

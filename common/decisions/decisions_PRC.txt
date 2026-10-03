@@ -1,0 +1,732 @@
+PRC_taiwan_war_cat = {
+
+    # ==================== 无限制轰炸台湾（与CHI交战时可执行） ====================
+    PRC_carpet_bomb_taiwan = {
+        icon = GFX_decision_generic_air_force
+        allowed = {
+            tag = PRC
+        }
+        visible = {
+            has_war_with = CHI
+        }
+        available = {
+            has_political_power > 50
+            NOT = { has_country_flag = PRC_carpet_bomb_taiwan_cd }
+        }
+        fire_only_once = no
+        cost = 50
+        days_remove = 3
+        days_re_enable = 180
+        modifier = {
+            political_power_gain = -0.30
+            stability_factor = -0.05
+        }
+        complete_effect = {
+            set_country_flag = { flag = PRC_carpet_bomb_taiwan_cd days = 180 }
+        }
+        remove_effect = {	
+            CHI = {
+				add_manpower = -16374
+                every_owned_state = {
+                    damage_building = {
+                        type = infrastructure
+                        damage = 0.75
+                    }
+                    damage_building = {
+                        type = arms_factory
+                        damage = 0.5
+                    }
+                    damage_building = {
+                        type = industrial_complex
+                        damage = 0.5
+                    }
+                    damage_building = {
+                        type = dockyard
+                        damage = 0.5
+                    }
+                }
+            }
+        }
+        ai_will_do = {
+            base = 30
+        }
+    }
+
+    # ==================== 速胜论宣传 ====================
+    PRC_rapid_victory_propaganda = {
+        icon = GFX_decision_generic_propaganda_campaigns
+        allowed = {
+            tag = PRC
+        }
+        visible = {
+            has_completed_focus = PRC_analyze_first_days
+        }
+        available = {
+            has_completed_focus = PRC_analyze_first_days
+            has_political_power > 10
+        }
+        fire_only_once = no
+        days_remove = 60
+        cost = 10
+        modifier = {
+            army_attack_factor = 0.12
+            breakthrough_factor = 0.14
+            terrain_penalty_reduction = 0.10
+            supply_consumption_factor = -0.12
+            stability_factor = 0.05
+            war_support_factor = 0.05
+            consumer_goods_factor = 0.025
+            political_power_gain = 0.20
+            terrain_penalty_reduction = 0.25
+            naval_invasion_capacity = 5
+            naval_invasion_penalty = -0.20
+            naval_invasion_speed = 0.15
+            army_fuel_consumption_factor = -0.25
+            air_fuel_consumption_factor = -0.25
+            navy_fuel_consumption_factor = -0.25
+        }
+        remove_effect = {
+            add_war_support = -0.10
+            add_stability = 0.03
+            # 减少PRC台海战争倒计时60天
+            add_days_mission_timeout = {
+                mission = PRC_taiwan_war_countdown
+                days = -60
+            }
+            # 减少日本方面倒计时60天
+            JAP = {
+                add_days_mission_timeout = {
+                    mission = JAP_taiwan_war_mission
+                    days = -60
+                }
+            }
+            # 减少WW方面倒计时60天
+            CHI = {
+                add_days_mission_timeout = {
+                    mission = CHI_taiwan_war_mission
+                    days = -60
+                }
+            }
+        }
+        ai_will_do = {
+            base = 200
+        }
+    }
+
+    # ==================== 动用储备武器 ====================
+    PRC_mobilize_reserve_weapons = {
+        icon = GFX_decision_generic_crossed_guns
+        allowed = {
+            tag = PRC
+        }
+        visible = {
+            has_completed_focus = PRC_analyze_first_days
+        }
+        available = {
+            has_completed_focus = PRC_analyze_first_days
+            has_political_power > 10
+        }
+        fire_only_once = yes
+        cost = 10
+        days_remove = 100
+        modifier = {
+            consumer_goods_factor = 0.08          # 生活消费品系数 +10%
+            industrial_capacity_factory = 0.07    # 工厂产出 +7%
+            supply_consumption_factor = -0.05     # 补给消耗 -5%
+            army_fuel_consumption_factor = -0.15
+            terrain_penalty_reduction = 0.12      # 地形惩罚 -12%
+            naval_invasion_penalty = -0.12        # 登陆惩罚 -12%
+        }
+        complete_effect = {
+            # ----- 获得装备（一次性） -----
+            add_equipment_to_stockpile = {
+                type = mechanized_equipment
+                amount = 4500
+                producer = PRC
+            }
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 7000
+                producer = PRC
+            }
+            add_equipment_to_stockpile = {
+                type = support_equipment
+                amount = 5000
+                producer = PRC
+            }
+            add_equipment_to_stockpile = {
+                type = anti_tank_equipment
+                amount = 500
+                producer = PRC
+            }
+            add_equipment_to_stockpile = {
+                type = anti_air_equipment
+                amount = 500
+                producer = PRC
+            }
+            # 自行火炮 - 参考德国国策使用 modern_tank_artillery_equipment_1
+            add_equipment_to_stockpile = {
+                type = modern_tank_artillery_equipment
+                amount = 5000
+                producer = PRC
+            }
+            add_equipment_to_stockpile = {
+                type = motorized_equipment
+                amount = 800
+                producer = PRC
+            }
+            add_equipment_to_stockpile = {
+                type = fighter_equipment_2
+                amount = 100
+                producer = PRC
+            }
+        }
+        remove_effect = {
+            add_political_power = -90             # 消耗政治点数
+        }
+        ai_will_do = {
+            base = 0
+        }
+    }
+
+    # ==================== 倾泻火力（全方位打击CHI、JAP、AST） ====================
+    PRC_unleash_firepower = {
+        icon = GFX_decision_generic_air_force
+        allowed = {
+            tag = PRC
+        }
+        visible = {
+			OR = {
+				has_completed_focus = PRC_final_offensive
+				has_completed_focus = PRC_no_hurry
+			}
+            has_war_with = CHI
+        }
+        available = {
+			OR = {
+				has_completed_focus = PRC_final_offensive
+				has_completed_focus = PRC_no_hurry
+			}
+            has_political_power > 50
+            NOT = { has_country_flag = PRC_unleash_firepower_cd }
+        }
+        fire_only_once = no
+        cost = 50
+        days_remove = 10
+        days_re_enable = 180
+        modifier = {
+            political_power_gain = -0.10
+            stability_factor = -0.05
+        }
+        complete_effect = {
+            set_country_flag = { flag = PRC_unleash_firepower_cd days = 180 }
+        }
+        remove_effect = {
+            add_war_support = -0.10
+            # 减少PRC台海战争倒计时60天
+            add_days_mission_timeout = {
+                mission = PRC_taiwan_war_countdown
+                days = -90
+            }
+            # 减少日本方面倒计时60天
+            JAP = {
+                add_days_mission_timeout = {
+                    mission = JAP_taiwan_war_mission
+                    days = -90
+                }
+            }
+            # 减少WW方面倒计时60天
+            CHI = {
+                add_days_mission_timeout = {
+                    mission = CHI_taiwan_war_mission
+                    days = -90
+                }
+            }
+            # ----- CHI（台湾）遭受最严重打击 -----
+            CHI = {
+                every_owned_state = {
+                    damage_building = {
+                        type = infrastructure
+                        damage = 0.75
+                    }
+                    damage_building = {
+                        type = arms_factory
+                        damage = 0.5
+                    }
+                    damage_building = {
+                        type = industrial_complex
+                        damage = 0.5
+                    }
+                    damage_building = {
+                        type = dockyard
+                        damage = 0.5
+                    }
+                }
+                add_stability = -0.15
+                add_war_support = -0.15
+                add_manpower = -50000
+            }
+
+            # ----- JAP（日本）遭受中等程度打击 -----
+            JAP = {
+                every_owned_state = {
+                    damage_building = {
+                        type = infrastructure
+                        damage = 0.50
+                    }
+                    damage_building = {
+                        type = arms_factory
+                        damage = 0.30
+                    }
+                    damage_building = {
+                        type = industrial_complex
+                        damage = 0.30
+                    }
+                    damage_building = {
+                        type = dockyard
+                        damage = 0.30
+                    }
+                }
+                add_stability = -0.10
+                add_war_support = -0.10
+                add_manpower = -20000
+            }
+
+            # ----- AST（澳大利亚）遭受轻微打击 -----
+            AST = {
+                every_owned_state = {
+                    damage_building = {
+                        type = infrastructure
+                        damage = 0.30
+                    }
+                    damage_building = {
+                        type = arms_factory
+                        damage = 0.20
+                    }
+                    damage_building = {
+                        type = industrial_complex
+                        damage = 0.20
+                    }
+                    damage_building = {
+                        type = dockyard
+                        damage = 0.20
+                    }
+                }
+                add_stability = -0.08
+                add_war_support = -0.08
+                add_manpower = -15000
+            }
+        }
+        ai_will_do = {
+            base = 0
+        }
+    }
+
+}
+
+
+# ==================== 两岸政治攻势 ====================
+PRC_cross_strait_political_offensive_category = {
+
+    # ---------- 决议1：劝降书 ----------
+    PRC_offer_surrender_terms = {
+        icon = generic_decisions_demand_territory
+        allowed = { tag = PRC }
+        visible = {
+            has_completed_focus = new_tw_focus_2
+        }
+        available = {
+            has_political_power > 30
+            NOT = { has_country_flag = PRC_surrender_terms_cd }
+        }
+        fire_only_once = no
+        cost = 30
+        days_remove = 30
+        days_re_enable = 60
+        modifier = {
+            political_power_gain = -0.05
+        }
+        complete_effect = {
+            set_country_flag = { flag = PRC_surrender_terms_cd days = 60 }
+        }
+        remove_effect = {
+            CHI = {
+                add_popularity = {
+                    ideology = totalitarian_socialist
+                    popularity = 0.02
+                }
+                add_popularity = {
+                    ideology = communist
+                    popularity = 0.02
+                }
+                add_popularity = {
+                    ideology = libertarian_socialist
+                    popularity = 0.01
+                }
+                add_popularity = {
+                    ideology = social_liberal
+                    popularity = -0.02
+                }
+                add_popularity = {
+                    ideology = conservative
+                    popularity = -0.02
+                }
+                add_stability = -0.02
+                add_war_support = -0.02
+                add_timed_idea = {
+                    idea = CHI_ideological_reunification
+                    days = 60
+                }
+                add_timed_idea = {
+                    idea = CHI_ideological_shock
+                    days = 60
+                }
+            }
+        }
+        ai_will_do = {
+            base = 40
+        }
+    }
+
+    # ---------- 决议2：促统宣言 ----------
+    PRC_promote_reunification_declaration = {
+        icon = generic_decisions_improve_worker_conditions
+        allowed = { tag = PRC }
+        visible = {
+            has_completed_focus = new_tw_focus_2
+        }
+        available = {
+            has_political_power > 50
+            NOT = { has_country_flag = PRC_reunification_dec_cd }
+        }
+        fire_only_once = no
+        cost = 50
+        days_remove = 45
+        days_re_enable = 90
+        modifier = {
+            political_power_gain = -0.08
+            stability_factor = -0.02
+        }
+        complete_effect = {
+            set_country_flag = { flag = PRC_reunification_dec_cd days = 90 }
+        }
+        remove_effect = {
+            CHI = {
+                add_popularity = {
+                    ideology = totalitarian_socialist
+                    popularity = 0.04
+                }
+                add_popularity = {
+                    ideology = communist
+                    popularity = 0.04
+                }
+                add_popularity = {
+                    ideology = libertarian_socialist
+                    popularity = 0.02
+                }
+                add_popularity = {
+                    ideology = social_liberal
+                    popularity = -0.04
+                }
+                add_popularity = {
+                    ideology = conservative
+                    popularity = -0.04
+                }
+                add_popularity = {
+                    ideology = social_democrat
+                    popularity = -0.02
+                }
+                add_stability = -0.03
+                add_war_support = -0.03
+                add_timed_idea = {
+                    idea = CHI_ideological_reunification
+                    days = 65
+                }
+                add_timed_idea = {
+                    idea = CHI_ideological_shock
+                    days = 65
+                }
+            }
+        }
+        ai_will_do = {
+            base = 35
+        }
+    }
+
+    # ---------- 决议3：最后通牒 ----------
+    PRC_issue_ultimatum = {
+        icon = generic_decisions_military_effort
+        allowed = { tag = PRC }
+        visible = {
+            has_completed_focus = new_tw_focus_2
+        }
+        available = {
+            has_political_power > 70
+            NOT = { has_country_flag = PRC_ultimatum_cd }
+        }
+        fire_only_once = no
+        cost = 70
+        days_remove = 50
+        days_re_enable = 120
+        modifier = {
+            political_power_gain = -0.10
+            stability_factor = -0.04
+            war_support_factor = -0.03
+        }
+        complete_effect = {
+            set_country_flag = { flag = PRC_ultimatum_cd days = 120 }
+        }
+        remove_effect = {
+            CHI = {
+                add_popularity = {
+                    ideology = totalitarian_socialist
+                    popularity = 0.06
+                }
+                add_popularity = {
+                    ideology = communist
+                    popularity = 0.05
+                }
+                add_popularity = {
+                    ideology = libertarian_socialist
+                    popularity = 0.03
+                }
+                add_popularity = {
+                    ideology = social_liberal
+                    popularity = -0.06
+                }
+                add_popularity = {
+                    ideology = conservative
+                    popularity = -0.06
+                }
+                add_popularity = {
+                    ideology = social_democrat
+                    popularity = -0.04
+                }
+                add_popularity = {
+                    ideology = market_liberal
+                    popularity = -0.02
+                }
+                add_stability = -0.05
+                add_war_support = -0.05
+                add_timed_idea = {
+                    idea = CHI_ideological_reunification
+                    days = 75
+                }
+                add_timed_idea = {
+                    idea = CHI_ideological_shock
+                    days = 75
+                }
+            }
+        }
+        ai_will_do = {
+            base = 25
+        }
+    }
+
+    # ---------- 决议4：武力威慑 ----------
+    PRC_military_deterrence = {
+        icon = generic_decisions_army_effort
+        allowed = { tag = PRC }
+        visible = {
+            has_completed_focus = new_tw_focus_2
+        }
+        available = {
+            has_political_power > 40
+            NOT = { has_country_flag = PRC_deterrence_cd }
+        }
+        fire_only_once = no
+        cost = 40
+        days_remove = 40
+        days_re_enable = 75
+        modifier = {
+            political_power_gain = -0.06
+            war_support_factor = 0.03
+        }
+        complete_effect = {
+            set_country_flag = { flag = PRC_deterrence_cd days = 75 }
+        }
+        remove_effect = {
+            CHI = {
+                add_popularity = {
+                    ideology = totalitarian_socialist
+                    popularity = 0.03
+                }
+                add_popularity = {
+                    ideology = communist
+                    popularity = 0.02
+                }
+                add_popularity = {
+                    ideology = libertarian_socialist
+                    popularity = 0.02
+                }
+                add_popularity = {
+                    ideology = social_liberal
+                    popularity = -0.03
+                }
+                add_popularity = {
+                    ideology = conservative
+                    popularity = -0.03
+                }
+                add_stability = -0.03
+                add_war_support = -0.04
+                add_timed_idea = {
+                    idea = CHI_ideological_reunification
+                    days = 80
+                }
+                add_timed_idea = {
+                    idea = CHI_ideological_shock
+                    days = 80
+                }
+            }
+        }
+        ai_will_do = {
+            base = 30
+        }
+    }
+}
+# ==================== 国家能源战略 ====================
+PRC_energy_strategy_category = {
+
+    # ==================== 重启大庆石油 ====================
+    PRC_restart_daqing_oil = {
+        icon = oil
+        allowed = { always = yes }
+        fire_only_once = yes
+        cost = 80
+        days_remove = 100
+        available = {
+            has_political_power > 80
+            NOT = { has_country_flag = PRC_daqing_oil_done }
+        }
+        visible = {
+            NOT = { has_country_flag = PRC_daqing_oil_done }
+        }
+        modifier = {
+            political_power_gain = 0.10
+            civilian_factory_use = 4
+        }
+        complete_effect = {
+            set_country_flag = { flag = PRC_daqing_oil_done days = 100 }
+        }
+        remove_effect = {
+            714 = {
+                add_resource = { type = oil amount = 10 }
+            }
+            add_political_power = 20
+        }
+        ai_will_do = { base = 80 }
+    }
+
+    # ==================== 开展海上石油 ====================
+    PRC_develop_offshore_oil = {
+        icon = oil
+        allowed = { always = yes }
+        fire_only_once = yes
+        cost = 100
+        days_remove = 120
+        available = {
+            has_political_power > 100
+            NOT = { has_country_flag = PRC_offshore_oil_done }
+        }
+        visible = {
+            NOT = { has_country_flag = PRC_offshore_oil_done }
+        }
+        modifier = {
+            political_power_gain = 0.15
+            civilian_factory_use = 5
+            consumer_goods_factor = 0.05
+        }
+        complete_effect = {
+            set_country_flag = { flag = PRC_offshore_oil_done days = 120 }
+        }
+        remove_effect = {
+            # 东海油田
+            random_owned_controlled_state = {
+                limit = {
+                    OR = {
+                        state = 1414    # 通化
+                        state = 1394    # 大连
+                        state = 716     # 辽沈
+                    }
+                }
+                add_resource = { type = oil amount = 12 }
+            }
+            # 南海油田
+            random_owned_controlled_state = {
+                limit = {
+                    OR = {
+						state = 879
+                        state = 609     # 山海关
+                        state = 1425    # 锦州
+                    }
+                }
+                add_resource = { type = oil amount = 15 }
+            }
+            add_political_power = 25
+        }
+        ai_will_do = { base = 70 }
+    }
+
+    # ==================== 重视新能源 ====================
+    PRC_prioritize_renewable_energy = {
+        icon = GFX_decision_generic_energy
+        allowed = { always = yes }
+        fire_only_once = yes
+        cost = 90
+        days_remove = 100
+        available = {
+            has_political_power > 90
+            NOT = { has_country_flag = PRC_renewable_energy_done }
+        }
+        visible = {
+            NOT = { has_country_flag = PRC_renewable_energy_done }
+        }
+        modifier = {
+            political_power_gain = 0.20
+            civilian_factory_use = 3
+        }
+        complete_effect = {
+            set_country_flag = { flag = PRC_renewable_energy_done days = 100 }
+        }
+        remove_effect = {
+            add_timed_idea = {
+                idea = PRC_renewable_energy_boost
+                days = 365
+            }
+            add_political_power = 20
+        }
+        ai_will_do = { base = 75 }
+    }
+
+    # ==================== 合成能源计划 ====================
+    PRC_synthetic_energy_program = {
+        icon = GFX_decision_generic_industry
+        allowed = { always = yes }
+        fire_only_once = yes
+        cost = 120
+        days_remove = 150
+        available = {
+            has_political_power > 120
+            NOT = { has_country_flag = PRC_synthetic_energy_done }
+        }
+        visible = {
+            NOT = { has_country_flag = PRC_synthetic_energy_done }
+        }
+        modifier = {
+            political_power_gain = 0.25
+            civilian_factory_use = 6
+            consumer_goods_factor = 0.08
+        }
+        complete_effect = {
+            set_country_flag = { flag = PRC_synthetic_energy_done days = 150 }
+        }
+        remove_effect = {
+            add_timed_idea = {
+                idea = PRC_synthetic_energy_efficiency
+                days = 365
+            }
+            add_political_power = 30
+        }
+        ai_will_do = { base = 60 }
+    }
+}

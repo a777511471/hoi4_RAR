@@ -1,0 +1,21 @@
+# ==================== 革故鼎新：开发调试工具 ====================
+# 说明：这是开发期自用的调试决议分类。正式发布前把下面三个文件整体删除即可：
+#   common/decisions/categories/PRC_dev_tools_categories.txt
+#   common/decisions/PRC_dev_tools_decisions.txt
+#   localisation/simp_chinese/PRC_dev_tools_l_simp_chinese.yml
+
+PRC_dev_tools_category = {
+	icon = GFX_decision_category_generic
+
+	allowed = {
+		original_tag = PRC
+	}
+
+	visible = {
+		is_ai = no
+	}
+
+	available = {
+		is_ai = no
+	}
+}

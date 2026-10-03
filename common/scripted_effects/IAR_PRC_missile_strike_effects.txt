@@ -1,0 +1,706 @@
+﻿﻿# IAR PRC missile strike effects.
+# Individual strike effects run in STATE scope; the mass-barrage effect runs in COUNTRY scope.
+
+IAR_PRC_missile_explosion_visual = {
+	if = {
+		limit = { state = 524 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 971524
+			state = 524
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 971524
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 648 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 971648
+			state = 648
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 971648
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 1148 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 972148
+			state = 1148
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 972148
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 1149 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 972149
+			state = 1149
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 972149
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 1150 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 972150
+			state = 1150
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 972150
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 1451 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 972451
+			state = 1451
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 972451
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 282 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 971282
+			state = 282
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 971282
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 526 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 971526
+			state = 526
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 971526
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 528 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 971528
+			state = 528
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 971528
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 529 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 971529
+			state = 529
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 971529
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 530 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 971530
+			state = 530
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 971530
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 531 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 971531
+			state = 531
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 971531
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 532 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 971532
+			state = 532
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 971532
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 533 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 971533
+			state = 533
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 971533
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 534 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 971534
+			state = 534
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 971534
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 535 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 971535
+			state = 535
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 971535
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 536 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 971536
+			state = 536
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 971536
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 645 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 971645
+			state = 645
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 971645
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 876 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 971876
+			state = 876
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 971876
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 1332 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 972332
+			state = 1332
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 972332
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 1333 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 972333
+			state = 1333
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 972333
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 1334 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 972334
+			state = 1334
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 972334
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 1335 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 972335
+			state = 1335
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 972335
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 1336 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 972336
+			state = 1336
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 972336
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 1337 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 972337
+			state = 1337
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 972337
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 1338 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 972338
+			state = 1338
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 972338
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 1340 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 972340
+			state = 1340
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 972340
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 1341 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 972341
+			state = 1341
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 972341
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 285 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 971285
+			state = 285
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 971285
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 517 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 971517
+			state = 517
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 971517
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 518 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 971518
+			state = 518
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 971518
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 519 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 971519
+			state = 519
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 971519
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 520 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 971520
+			state = 520
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 971520
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 521 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 971521
+			state = 521
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 971521
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 522 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 971522
+			state = 522
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 971522
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 636 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 971636
+			state = 636
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 971636
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 711 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 971711
+			state = 711
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 971711
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 712 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 971712
+			state = 712
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 971712
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 726 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 971726
+			state = 726
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 971726
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 868 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 971868
+			state = 868
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 971868
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 883 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 971883
+			state = 883
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 971883
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 885 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 971885
+			state = 885
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 971885
+			animation = "attack"
+		}
+	}
+	else_if = {
+		limit = { state = 911 }
+		create_entity = {
+			entity = air_raids_1_success_entity
+			id = 971911
+			state = 911
+			scale = 1.0
+		}
+		set_entity_animation = {
+			id = 971911
+			animation = "attack"
+		}
+	}
+}
+
+IAR_PRC_missile_strike_first_wave = {
+	IAR_PRC_missile_explosion_visual = yes
+	random_list = {
+		20 = {
+			damage_building = { type = industrial_complex damage = 1.5 }
+			damage_building = { type = infrastructure damage = 0.5 }
+		}
+		20 = {
+			damage_building = { type = arms_factory damage = 1.5 }
+			damage_building = { type = infrastructure damage = 0.5 }
+		}
+		15 = {
+			damage_building = { type = dockyard damage = 1.5 }
+			damage_building = { type = infrastructure damage = 0.5 }
+		}
+		15 = {
+			damage_building = { type = naval_base damage = 1.5 }
+			damage_building = { type = infrastructure damage = 0.5 }
+		}
+		15 = {
+			damage_building = { type = infrastructure damage = 2.0 }
+		}
+		15 = {
+			add_manpower = -5000
+			damage_building = { type = infrastructure damage = 0.5 }
+		}
+	}
+}
+
+IAR_PRC_missile_strike_second_wave = {
+	IAR_PRC_missile_explosion_visual = yes
+	random_list = {
+		20 = {
+			damage_building = { type = industrial_complex damage = 2.0 }
+			damage_building = { type = infrastructure damage = 0.75 }
+		}
+		20 = {
+			damage_building = { type = arms_factory damage = 2.0 }
+			damage_building = { type = infrastructure damage = 0.75 }
+		}
+		15 = {
+			damage_building = { type = dockyard damage = 2.0 }
+			damage_building = { type = infrastructure damage = 0.75 }
+		}
+		15 = {
+			damage_building = { type = naval_base damage = 2.0 }
+			damage_building = { type = infrastructure damage = 0.75 }
+		}
+		15 = {
+			damage_building = { type = infrastructure damage = 2.5 }
+		}
+		15 = {
+			add_manpower = -7500
+			damage_building = { type = infrastructure damage = 0.75 }
+		}
+	}
+}
+
+IAR_PRC_missile_strike_taiwan_barrage = {
+	IAR_PRC_missile_explosion_visual = yes
+	random_list = {
+		20 = {
+			damage_building = { type = industrial_complex damage = 2.5 }
+			damage_building = { type = infrastructure damage = 1.0 }
+		}
+		20 = {
+			damage_building = { type = arms_factory damage = 2.5 }
+			damage_building = { type = infrastructure damage = 1.0 }
+		}
+		15 = {
+			damage_building = { type = dockyard damage = 2.5 }
+			damage_building = { type = infrastructure damage = 1.0 }
+		}
+		15 = {
+			damage_building = { type = naval_base damage = 2.5 }
+			damage_building = { type = infrastructure damage = 1.0 }
+		}
+		15 = {
+			damage_building = { type = infrastructure damage = 3.0 }
+		}
+		15 = {
+			add_manpower = -10000
+			damage_building = { type = infrastructure damage = 1.0 }
+		}
+	}
+}
+
+# Called by the one-time missile bombardment focus: hit every listed Taiwanese, Japanese and Australian state once again.
+IAR_PRC_missile_strike_all_targets_second_wave = {
+	every_state = {
+		limit = {
+			OR = {
+			state = 524
+			state = 648
+			state = 1148
+			state = 1149
+			state = 1150
+			state = 1451
+			state = 282
+			state = 526
+			state = 528
+			state = 529
+			state = 530
+			state = 531
+			state = 532
+			state = 533
+			state = 534
+			state = 535
+			state = 536
+			state = 645
+			state = 876
+			state = 1332
+			state = 1333
+			state = 1334
+			state = 1335
+			state = 1336
+			state = 1337
+			state = 1338
+			state = 1340
+			state = 1341
+			state = 285
+			state = 517
+			state = 518
+			state = 519
+			state = 520
+			state = 521
+			state = 522
+			state = 636
+			state = 711
+			state = 712
+			state = 726
+			state = 868
+			state = 883
+			state = 885
+			state = 911
+			}
+			NOT = { is_controlled_by = ROOT }
+		}
+		IAR_PRC_missile_strike_second_wave = yes
+	}
+}
